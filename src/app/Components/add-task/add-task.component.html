@@ -1,0 +1,15 @@
+<div>
+    <button class="button" (click)="toggleInput()"> Add your Task </button> 
+    <input *ngIf="showInput" type="text" [(ngModel)]="newTask" placeholder="Nueva tarea">
+    <button *ngIf="showInput" (click)="addTask()">Añadir</button>
+
+<!--Componente Delete-->
+<app-delete-task (tasksDeleted)="tasks.pop()"></app-delete-task>
+
+<ol >
+    <li  ngClass="ToDoLi" *ngFor="let task of tasks" [class.completed]="task.completed">
+    <input type="checkbox" ngClass="mycheck" [(ngModel)]="task.completed"> {{ task.name }}
+</li>
+  </ol>
+
+</div>

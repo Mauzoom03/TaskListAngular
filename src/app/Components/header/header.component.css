@@ -1,0 +1,26 @@
+.container{
+    background-color: rgb(8, 8, 8);
+    width: 100%;
+    background-size: cover;
+    height:14%;
+}
+
+.Logo{
+    width: 14%;
+   
+}
+
+.ToolBar{
+display: flex;
+color: white;
+justify-content: center;
+align-items: center;
+
+
+
+}
+.title{
+    margin-top:-10%;
+    font-size: 280%;
+    font-style: oblique;
+}
